@@ -1,0 +1,18 @@
+{
+  "name": "pixel-go-chess-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static landing page for the Pixel Go Chess game",
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "qr": "node scripts/qr.mjs",
+    "seo": "node scripts/seo.mjs",
+    "fonts": "node scripts/fonts.mjs",
+    "sync": "node scripts/qr.mjs && node scripts/seo.mjs"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4",
+    "subset-font": "^2.9.0"
+  }
+}
