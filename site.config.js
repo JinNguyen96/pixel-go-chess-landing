@@ -8,7 +8,7 @@ globalThis.SITE_CONFIG = {
   },
   ios: {
     url: '',
-    appId: '',
+    appId: '6817438065',
     available: false,
   },
   web: {
