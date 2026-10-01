@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pixel-go-chess.vercel.app/sitemap.xml
+Sitemap: https://pixel-go-chess-landing.vercel.app/sitemap.xml

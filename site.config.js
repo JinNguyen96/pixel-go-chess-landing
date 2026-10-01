@@ -1,6 +1,6 @@
 globalThis.SITE_CONFIG = {
-  siteUrl: 'https://pixel-go-chess.vercel.app',
-  contactEmail: 'support@example.com',
+  siteUrl: 'https://pixel-go-chess-landing.vercel.app',
+  contactEmail: 'congthongtin.khxh@gmail.com',
   owner: 'Pixel Go Chess',
   android: {
     url: 'https://play.google.com/store/apps/details?id=app.pixelgo.game',
