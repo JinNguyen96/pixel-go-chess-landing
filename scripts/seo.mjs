@@ -17,7 +17,7 @@ if (!match) {
 }
 const previous = match[1]
 
-for (const file of ['index.html', 'privacy.html', '404.html']) {
+for (const file of ['index.html', 'privacy.html', 'delete-account.html', '404.html']) {
   const path = join(root, file)
   const text = readFileSync(path, 'utf8')
   const next = text.split(previous).join(siteUrl)
@@ -43,6 +43,10 @@ ${alternates}
   </url>
   <url>
     <loc>${siteUrl}/privacy.html</loc>
+    <lastmod>${today}</lastmod>
+  </url>
+  <url>
+    <loc>${siteUrl}/delete-account.html</loc>
     <lastmod>${today}</lastmod>
   </url>
 </urlset>

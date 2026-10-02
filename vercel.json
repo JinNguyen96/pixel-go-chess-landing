@@ -85,5 +85,19 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/xoa-tai-khoan",
+      "destination": "/delete-account.html"
+    },
+    {
+      "source": "/delete-account",
+      "destination": "/delete-account.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    }
   ]
 }

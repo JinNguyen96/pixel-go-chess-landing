@@ -55,10 +55,10 @@
 
   <article class="px-lg" lang="en" data-policy="en">
     <h2>Short version</h2>
-    <p>Pixel Go Chess has no accounts and no servers of its own. Your games, coins, ratings and settings stay on your device. The app shows ads through Google AdMob and sells an optional “Remove Ads” purchase through RevenueCat, the App Store and Google Play. Those services receive some data, described below. This website sets no cookies, runs no analytics and loads nothing from other companies.</p>
+    <p>Pixel Go Chess works without an account: your games, coins, ratings and settings stay on your device. From version 1.1 you can <b>optionally</b> connect an Apple or Google account to back up and sync your progress through our server (section 5). The app shows ads through Google AdMob and sells optional purchases through RevenueCat, the App Store and Google Play. Those services receive some data, described below. This website sets no cookies, runs no analytics and loads nothing from other companies.</p>
 
     <h3>1. Data kept only on your device</h3>
-    <p>Game records, puzzle progress, coins, AI rating, quests, check-ins, settings and a random device identifier created by the app. This data is not sent to us. You can erase it any time in Settings → Delete data, or by uninstalling the app.</p>
+    <p>Game records, puzzle progress, coins, AI rating, quests, check-ins, settings and a random device identifier created by the app. This data is not sent to us unless you connect an account (section 5). You can erase it any time in Settings → Delete data, or by uninstalling the app.</p>
 
     <h3>2. Advertising (Google AdMob)</h3>
     <p>The free version shows a banner, short breaks between games and optional reward videos. Google's Mobile Ads SDK may collect your IP address (used to estimate a general location), your device's advertising identifier (the Android advertising ID, or on iOS the IDFA only if you allow tracking), interactions with ads, and diagnostic data such as app launch time and crashes. Google uses this data to show, measure and protect ads. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses data from partner apps</a>.</p>
@@ -67,15 +67,22 @@
     <p>In the European Economic Area, the UK, Switzerland and US states with privacy laws, the app asks for your choice through Google's User Messaging Platform before loading ads. On iPhone and iPad, iOS asks whether the app may track you (App Tracking Transparency). If you say no, ads are not personalized and every feature still works. You can change your ad choices any time in Settings → Privacy options, and the tracking permission in iOS Settings → Privacy &amp; Security → Tracking. On Android you can reset or delete your advertising ID in the system settings.</p>
 
     <h3>4. Purchases (RevenueCat, App Store, Google Play)</h3>
-    <p>“Remove Ads” is processed by Apple or Google. RevenueCat receives the purchase receipt and an anonymous app user ID so the app can confirm and restore your purchase. We never see your payment details. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.</p>
+    <p>“Remove Ads”, coin packs and analysis packs are processed by Apple or Google. RevenueCat receives the purchase receipt and an app user ID (anonymous until you connect an account, then your account ID) so the app and our server can confirm, credit and restore your purchases. We never see your payment details. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.</p>
 
-    <h3>5. Children</h3>
+    <h3>5. Optional account and cloud sync (from version 1.1)</h3>
+    <p>Connecting an account is optional and every feature works without one. If you tap <b>Continue with Apple</b> or <b>Continue with Google</b> in Profile → Account, the app sends the sign-in token issued by Apple or Google to our server once, to create or find your account. From then on the app syncs your progress each time you open it, so you keep it when you change phones or reinstall.</p>
+    <p><b>What the server stores:</b> a random account ID; the user identifier Apple or Google assigns to you for our app and, only if you allow it during sign-in, your email address; your finished games (move records), coins, rating, quests, check-ins, lessons and puzzles completed, unlocked avatars, symbols and trophies, your profile name, avatar and shelf choices; a random device ID for each connected phone; and the purchase identifiers that RevenueCat reports so purchases can be credited to the account. We do not store passwords (sign-in happens with Apple or Google), contacts, location or photos.</p>
+    <p><b>Where and how:</b> on Cloudflare Workers and Cloudflare D1, encrypted in transit (HTTPS) and at rest. Our server checks each game and reward it receives to prevent cheating; rejected entries are kept in a short technical log with your account ID.</p>
+    <p><b>How long:</b> as long as the account exists. <b>Disconnect</b> (Profile → Account → Disconnect) removes the data from that phone and keeps the account. <b>Delete account</b> (Profile → Account → Delete account) removes everything from the server immediately and signs out every phone; see <a href="delete-account.html">how to delete your account</a>. Up to 5 phones can be connected to one account.</p>
+    <p><b>Sharing:</b> we do not share account data with anyone. Apple, Google, RevenueCat and Cloudflare process it on our behalf for the purposes above.</p>
+
+    <h3>6. Children</h3>
     <p>Pixel Go Chess is designed for teens and adults and is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has used the app and data was collected by our partners, contact us and we will help with the request.</p>
 
-    <h3>6. What we do not do</h3>
-    <p>No account, no sign-in, no chat, no location permission, no access to contacts, photos, microphone or camera. We do not sell personal data.</p>
+    <h3>7. What we do not do</h3>
+    <p>No required account, no chat, no location permission, no access to contacts, photos, microphone or camera. Signing in is optional and goes through Apple or Google, so we never see a password. We do not sell personal data.</p>
 
-    <h3>7. This website</h3>
+    <h3>8. This website</h3>
     <ul>
       <li>No cookies, no analytics, no tracking pixels, no ads.</li>
       <li>No third-party requests: fonts, images and scripts are all served from this site. The only outside addresses are links you choose to follow, such as the store pages.</li>
@@ -83,16 +90,16 @@
       <li>Like any web server, the hosting provider (Vercel) may keep short-lived technical logs such as IP address and request time to run and protect the service. We do not use them to identify you.</li>
     </ul>
 
-    <h3>8. Your rights and contact</h3>
-    <p>Depending on where you live you may have the right to access, correct or delete personal data and to object to its use. Because we do not hold data about you, most requests are handled by deleting app data on your device or through Google and RevenueCat. For anything else, write to <a href="mailto:congthongtin.khxh@gmail.com" data-email data-email-text>congthongtin.khxh@gmail.com</a>. We will update this page if the app or the website changes and show the new effective date.</p>
+    <h3>9. Your rights and contact</h3>
+    <p>Depending on where you live you may have the right to access, correct or delete personal data and to object to its use. Without an account we hold no data about you, so requests are handled by deleting app data on your device or through Google and RevenueCat. With an account, you can delete everything yourself in the app, or email us the account email or sign-in method you used and we will delete it within 7 days. For anything else, write to <a href="mailto:congthongtin.khxh@gmail.com" data-email data-email-text>congthongtin.khxh@gmail.com</a>. We will update this page if the app or the website changes and show the new effective date.</p>
   </article>
 
   <article class="px-lg" lang="vi" data-policy="vi" hidden>
     <h2>Tóm tắt</h2>
-    <p>Pixel Go Chess không có tài khoản và không có máy chủ riêng. Ván cờ, xu, điểm xếp hạng và cài đặt chỉ lưu trên máy của bạn. App hiển thị quảng cáo qua Google AdMob và bán gói “Tắt quảng cáo” (không bắt buộc) qua RevenueCat, App Store và Google Play. Các dịch vụ này nhận một số dữ liệu, mô tả bên dưới. Trang web này không đặt cookie, không chạy công cụ thống kê và không tải gì từ công ty khác.</p>
+    <p>Pixel Go Chess dùng được mà không cần tài khoản: ván cờ, xu, điểm xếp hạng và cài đặt chỉ lưu trên máy của bạn. Từ phiên bản 1.1, bạn có thể <b>tuỳ chọn</b> kết nối tài khoản Apple hoặc Google để sao lưu và đồng bộ tiến trình qua máy chủ của chúng tôi (mục 5). App hiển thị quảng cáo qua Google AdMob và bán các gói không bắt buộc qua RevenueCat, App Store và Google Play. Các dịch vụ này nhận một số dữ liệu, mô tả bên dưới. Trang web này không đặt cookie, không chạy công cụ thống kê và không tải gì từ công ty khác.</p>
 
     <h3>1. Dữ liệu chỉ nằm trên máy của bạn</h3>
-    <p>Ván cờ đã chơi, tiến độ thế cờ, xu, điểm AI, nhiệm vụ, điểm danh, cài đặt và một mã thiết bị ngẫu nhiên do app tạo. Dữ liệu này không được gửi cho chúng tôi. Bạn có thể xóa bất cứ lúc nào trong Cài đặt → Xóa dữ liệu, hoặc gỡ app.</p>
+    <p>Ván cờ đã chơi, tiến độ thế cờ, xu, điểm AI, nhiệm vụ, điểm danh, cài đặt và một mã thiết bị ngẫu nhiên do app tạo. Dữ liệu này không được gửi cho chúng tôi trừ khi bạn kết nối tài khoản (mục 5). Bạn có thể xóa bất cứ lúc nào trong Cài đặt → Xóa dữ liệu, hoặc gỡ app.</p>
 
     <h3>2. Quảng cáo (Google AdMob)</h3>
     <p>Bản miễn phí có banner, quảng cáo ngắn giữa các ván và video nhận thưởng (tùy chọn). SDK quảng cáo của Google có thể thu thập địa chỉ IP (để ước lượng vị trí chung), mã quảng cáo của thiết bị (Android advertising ID, hoặc IDFA trên iOS chỉ khi bạn cho phép theo dõi), tương tác với quảng cáo và dữ liệu chẩn đoán như thời gian mở app và lỗi treo. Google dùng dữ liệu này để hiển thị, đo lường và chống gian lận quảng cáo. Xem <a href="https://policies.google.com/technologies/partner-sites?hl=vi" rel="noopener">cách Google sử dụng dữ liệu từ ứng dụng đối tác</a>.</p>
@@ -101,15 +108,22 @@
     <p>Ở Khu vực Kinh tế châu Âu, Anh, Thụy Sĩ và các bang của Mỹ có luật quyền riêng tư, app hỏi lựa chọn của bạn qua User Messaging Platform của Google trước khi tải quảng cáo. Trên iPhone và iPad, iOS hỏi app có được theo dõi bạn không (App Tracking Transparency). Nếu bạn từ chối, quảng cáo không được cá nhân hóa và mọi tính năng vẫn dùng bình thường. Bạn đổi lựa chọn quảng cáo trong Cài đặt → Tùy chọn quyền riêng tư, và quyền theo dõi trong Cài đặt iOS → Quyền riêng tư &amp; Bảo mật → Theo dõi. Trên Android, bạn đặt lại hoặc xóa mã quảng cáo trong cài đặt hệ thống.</p>
 
     <h3>4. Mua hàng (RevenueCat, App Store, Google Play)</h3>
-    <p>Gói “Tắt quảng cáo” do Apple hoặc Google xử lý thanh toán. RevenueCat nhận biên lai và một mã người dùng ẩn danh để app xác nhận và khôi phục giao dịch. Chúng tôi không bao giờ thấy thông tin thanh toán của bạn. Xem <a href="https://www.revenuecat.com/privacy" rel="noopener">chính sách quyền riêng tư của RevenueCat</a>.</p>
+    <p>Gói “Tắt quảng cáo”, gói xu và gói phân tích do Apple hoặc Google xử lý thanh toán. RevenueCat nhận biên lai và một mã người dùng (ẩn danh cho tới khi bạn kết nối tài khoản, sau đó là mã tài khoản của bạn) để app và máy chủ xác nhận, cộng và khôi phục giao dịch. Chúng tôi không bao giờ thấy thông tin thanh toán của bạn. Xem <a href="https://www.revenuecat.com/privacy" rel="noopener">chính sách quyền riêng tư của RevenueCat</a>.</p>
 
-    <h3>5. Trẻ em</h3>
+    <h3>5. Tài khoản tuỳ chọn và đồng bộ đám mây (từ phiên bản 1.1)</h3>
+    <p>Kết nối tài khoản là tuỳ chọn, mọi tính năng vẫn dùng được khi không có tài khoản. Khi bạn bấm <b>Tiếp tục với Apple</b> hoặc <b>Tiếp tục với Google</b> trong Hồ sơ → Tài khoản, app gửi mã đăng nhập do Apple hoặc Google cấp tới máy chủ của chúng tôi một lần để tạo hoặc tìm tài khoản. Từ đó app tự đồng bộ tiến trình mỗi lần mở, để bạn giữ được khi đổi máy hoặc cài lại.</p>
+    <p><b>Máy chủ lưu gì:</b> một mã tài khoản ngẫu nhiên; mã người dùng mà Apple hoặc Google cấp cho bạn với app này và, chỉ khi bạn cho phép lúc đăng nhập, địa chỉ email; các ván đã kết thúc (biên bản nước đi), xu, điểm xếp hạng, nhiệm vụ, điểm danh, bài học và thế cờ đã hoàn thành, avatar, biểu tượng và cúp đã mở, tên hồ sơ, avatar và cách xếp kệ cúp; một mã thiết bị ngẫu nhiên cho mỗi máy đã kết nối; và mã giao dịch mà RevenueCat báo để cộng gói đã mua vào tài khoản. Chúng tôi không lưu mật khẩu (đăng nhập qua Apple hoặc Google), danh bạ, vị trí hay ảnh.</p>
+    <p><b>Lưu ở đâu, thế nào:</b> trên Cloudflare Workers và Cloudflare D1, mã hoá khi truyền (HTTPS) và khi lưu. Máy chủ kiểm tra từng ván và phần thưởng nhận được để chống gian lận; mục bị từ chối được ghi vào nhật ký kỹ thuật ngắn hạn kèm mã tài khoản.</p>
+    <p><b>Giữ bao lâu:</b> chừng nào tài khoản còn tồn tại. <b>Ngắt kết nối</b> (Hồ sơ → Tài khoản → Ngắt kết nối) xoá dữ liệu trên máy đó nhưng giữ tài khoản. <b>Xoá tài khoản</b> (Hồ sơ → Tài khoản → Xoá tài khoản) xoá toàn bộ trên máy chủ ngay lập tức và đăng xuất mọi máy; xem <a href="delete-account.html">cách xoá tài khoản</a>. Một tài khoản kết nối tối đa 5 máy.</p>
+    <p><b>Chia sẻ:</b> chúng tôi không chia sẻ dữ liệu tài khoản cho ai. Apple, Google, RevenueCat và Cloudflare xử lý dữ liệu thay mặt chúng tôi cho các mục đích nêu trên.</p>
+
+    <h3>6. Trẻ em</h3>
     <p>Pixel Go Chess dành cho thiếu niên và người lớn, không nhắm tới trẻ dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn nghĩ một em nhỏ đã dùng app và đối tác của chúng tôi đã thu thập dữ liệu, hãy liên hệ để chúng tôi hỗ trợ.</p>
 
-    <h3>6. Những điều chúng tôi không làm</h3>
-    <p>Không tài khoản, không đăng nhập, không chat, không xin quyền vị trí, không truy cập danh bạ, ảnh, micro hay camera. Chúng tôi không bán dữ liệu cá nhân.</p>
+    <h3>7. Những điều chúng tôi không làm</h3>
+    <p>Không bắt buộc tài khoản, không chat, không xin quyền vị trí, không truy cập danh bạ, ảnh, micro hay camera. Đăng nhập là tuỳ chọn và đi qua Apple hoặc Google, nên chúng tôi không bao giờ thấy mật khẩu. Chúng tôi không bán dữ liệu cá nhân.</p>
 
-    <h3>7. Trang web này</h3>
+    <h3>8. Trang web này</h3>
     <ul>
       <li>Không cookie, không công cụ thống kê, không pixel theo dõi, không quảng cáo.</li>
       <li>Không gọi tới bên thứ ba: font, ảnh và mã đều được tải từ chính trang này. Địa chỉ bên ngoài duy nhất là các liên kết bạn tự chọn bấm, như trang store.</li>
@@ -117,8 +131,8 @@
       <li>Như mọi máy chủ web, nhà cung cấp hosting (Vercel) có thể giữ nhật ký kỹ thuật ngắn hạn như địa chỉ IP và thời điểm truy cập để vận hành và bảo vệ dịch vụ. Chúng tôi không dùng chúng để nhận diện bạn.</li>
     </ul>
 
-    <h3>8. Quyền của bạn và liên hệ</h3>
-    <p>Tùy nơi bạn sống, bạn có thể có quyền truy cập, sửa hoặc xóa dữ liệu cá nhân và phản đối việc sử dụng dữ liệu. Vì chúng tôi không giữ dữ liệu về bạn, phần lớn yêu cầu được xử lý bằng cách xóa dữ liệu app trên máy hoặc qua Google và RevenueCat. Việc khác, hãy viết cho <a href="mailto:congthongtin.khxh@gmail.com" data-email data-email-text>congthongtin.khxh@gmail.com</a>. Khi app hoặc trang web thay đổi, chúng tôi sẽ cập nhật trang này kèm ngày hiệu lực mới.</p>
+    <h3>9. Quyền của bạn và liên hệ</h3>
+    <p>Tùy nơi bạn sống, bạn có thể có quyền truy cập, sửa hoặc xóa dữ liệu cá nhân và phản đối việc sử dụng dữ liệu. Khi không có tài khoản, chúng tôi không giữ dữ liệu về bạn, nên yêu cầu được xử lý bằng cách xóa dữ liệu app trên máy hoặc qua Google và RevenueCat. Khi có tài khoản, bạn tự xoá toàn bộ ngay trong app, hoặc gửi email kèm email tài khoản hay cách đăng nhập đã dùng, chúng tôi xoá trong 7 ngày. Việc khác, hãy viết cho <a href="mailto:congthongtin.khxh@gmail.com" data-email data-email-text>congthongtin.khxh@gmail.com</a>. Khi app hoặc trang web thay đổi, chúng tôi sẽ cập nhật trang này kèm ngày hiệu lực mới.</p>
   </article>
 </main>
 
@@ -128,6 +142,7 @@
       <div class="foot-brand"><canvas width="12" height="12" data-sprite="stone_black" aria-hidden="true"></canvas><span>Pixel Go Chess</span></div>
       <ul class="foot-links">
         <li><a href="./" data-i18n="pp.home">Home</a></li>
+        <li><a href="delete-account.html" data-i18n="footer.delete">Delete account</a></li>
         <li><span data-i18n="footer.contact">Contact</span>: <a href="mailto:congthongtin.khxh@gmail.com" data-email data-email-text>congthongtin.khxh@gmail.com</a></li>
         <li><a href="assets/fonts/LICENSES.txt" data-i18n="footer.licenses">Font licenses</a></li>
       </ul>
